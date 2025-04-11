@@ -37,8 +37,8 @@ let botonDescargar = document.getElementById('descargarCV');
 
 botonDescargar.addEventListener('click', function() {
     let enlaceDescarga = document.createElement('a');
-    enlaceDescarga.href = 'CV/Jhorman_Bolivar_Hoja_de_vida_2024.pdf'; 
-    enlaceDescarga.download = 'JhormanCV.pdf'; 
+    enlaceDescarga.href = 'CV/CV_Jh_202_update.pdf'; 
+    enlaceDescarga.download = 'JhormanCV_2025.pdf'; 
 
     // document.body.appendChild(enlaceDescarga);
 
