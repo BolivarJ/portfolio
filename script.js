@@ -37,8 +37,8 @@ let botonDescargar = document.getElementById('descargarCV');
 
 botonDescargar.addEventListener('click', function() {
     let enlaceDescarga = document.createElement('a');
-    enlaceDescarga.href = 'CV/CV_Jh_202_update.pdf'; 
-    enlaceDescarga.download = 'JhormanCV_2025.pdf'; 
+    enlaceDescarga.href = 'CV/Jh_2025 _update.pdf'; 
+    enlaceDescarga.download = 'JhormanCV_25.pdf'; 
 
     // document.body.appendChild(enlaceDescarga);
 
