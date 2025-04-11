@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Menu Encabezado-->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">BolivarWeb</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="selecionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="selecionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="selecionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="selecionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="selecionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="selecionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- Seccion Inicio-->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenido-img">
+                <img src="img/Foto Fondo Blanco.jpeg" alt="">
+            </div>
+            <h1>Jhorman Bolivar C.</h1>
+            <h2>Desarrollador Front-end - <span style="color: #ffee00;">Javascript</span></h2>
+            <div class="redes">
+                <a href="https://www.linkedin.com/in/jhorman-bolívar-cañaveral-1578a4277/"><i
+                        class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!--Seccion Sobre Mi-->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mi</h2>
+            <p><span>Hola soy Jhorman Bolivar, </span> un joven de 19 años que ha explorado el mundo de la
+                programación y verdaderamente me fascina. En estos momentos, estoy enfocado en el
+                front-end, pero mi meta es convertirme en un full stack, con amplios conocimientos en todas las áreas.
+                Hace poco empecé a estudiar React de forma autónoma. ¡Es una locura, pero me sumo a ese reto!</p>
+
+            <div class="fila">
+                <!--Datos Personales-->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños:</strong>
+                            21-08-2004
+                        </li>
+                        <li>
+                            <strong>Dirección:</strong>
+                            Cra 81A Floresta Calazans
+                        </li>
+                        <li>
+                            <strong>Teléfono:</strong>
+                            322 5787390
+                        </li>
+                        <li>
+                            <strong>Correo:</strong>
+                            jhormanbolivar1@gmail.com
+                        </li>
+                        <li>
+                            <strong>Cargo:</strong>
+                            <span>Front-end Developer</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!--Intereses-->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>Video Juegos</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-music"></i>
+                            <span>Musica</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>Estudiar</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-heart"></i>
+                            <span>Ejercicio</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-film"></i>
+                            <span>Crear Videos</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-guitar"></i>
+                            <span>Tocar Guitarra</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button id="descargarCV">
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!--Seccion Habilidades-->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!--Technical Skills-->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso ">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Git Hub</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Playwright</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Drupal</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Professional Skills-->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>100%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación y Responsabilidad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>100%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>habilidades técnicas</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Seccion Curriculum-->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <!-- Columna Izquierda -->
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Análisis y desarrollo de software ADSI</h4>
+                        <span class="casa">Servicio Nacional de Aprendizaje</span>
+                        <span class="fecha">2021 - 2025</span>
+                        <p>Entender las necesidades del usuario, traducirlas en requisitos técnicos, crear soluciones
+                            mediante el uso de lenguajes de programación, bases de datos y herramientas de desarrollo,
+                            también he ampliado mis conocimientos estudiando autónomamente. Mi paso a seguir es aprender
+                            React.
+                        </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+
+                    <!-- Nueva Columna Adicional 1 -->
+                    <div class="item izq">
+                        <h4>Ingeniera en Software</h4>
+                        <span class="casa">Tecnologico de antioquia (TDEA)</span>
+                        <span class="fecha">Actualmente</span>
+                        <p>Formar profesionales capaces de formular y gestionar proyectos de Software que involucran
+                            todo el ciclo de vida del mismo. Es decir, puede participar en etapas desde la planeación,
+                            la ingeniería de requisitos, el desarrollo, mantenimiento, plan y ejecución de pruebas.
+                            Además tiene las habilidades necesarias para desarrollar la implementación del software a
+                            desarrollar soportado en estándares de calidad.
+                        </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+
+                    <!-- Nueva Columna Adicional 2 -->
+                    <div class="item izq">
+                        <h4>Programador de videoJuegos</h4>
+                        <span class="casa">Unity</span>
+                        <span class="fecha">2020</span>
+                        <p> Tuve la curiosidad de saber como hacer un juego 2D y pixelArt, asi que no me quede con las
+                            ganas
+                            y entre a ese mundo de los videojuegos, no termine el proyecto por temas de tiempo, pero
+                            logre avanzar un 25%
+                            de todo lo que queria hacer, implementando fisicas, geometria y otros conceptos para
+                            programar un videoJuego, se llamaba RamboAdventures.
+                        </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Columna Derecha -->
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Front-end Developer</h4>
+                        <span class="casa">Dentsu Creative Colombia</span>
+                        <span class="fecha">2023 - 2025</span>
+                        <p>Area de trabajo con sub-empresas, enfocados a el crecimiento personal, reforzando
+                            conocimientos con retos en react, javascript.
+                            Conocimientos de gestores de contenido (Drupal) proyectos con IA (Playground), plataforma de
+                            gestión de sitios web y administración de contenidos (Pantheon)
+
+                        </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+
+                    <!-- Nueva Columna Adicional 1 -->
+                    <div class="item der">
+                        <h4>Front-end Developer</h4>
+                        <span class="casa">Avianca</span>
+                        <span class="fecha">2023 - 2025</span>
+                        <p>Equipo SWAT, uso de la herramienta Adobe Experience Manager, en el CMS Adobe Target para
+                            desarrollos en las diferentes paginas y flujos avianca.com.
+                            Uso del CMS Adobe target para la implementación de test y pruebas A/B.
+                            Mejoras de Accesibilidad sobre el sitio.
+                            Uso de Playwright herramienta de automatización para ser mas eficiente la area de QA
+                        </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+
+                    <!-- Nueva Columna Adicional 2 -->
+                    <div class="item der">
+                        <h4>Maquetación Web (Drupal)</h4>
+                        <span class="casa">Bayer - Londoño gomez - Colsubsidio</span>
+                        <span class="fecha">2023 - 2024</span>
+                        <p> Uso de gestores de contenido para maquetación de paginas web, usando drupal y javascript,
+                            para ofrecer calidad al cliente.
+                        </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!--Seccion Portfolio-->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>Portfolio</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/p2.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Primer Diseño</h3>
+                        <p>Carrito de compras</p>
+                    </div>
+                    <p class="primerd">
+                        <span>Mi primer diseño</span> con un carrito de compras, agregando, eliminando y
+                        use una base de datos PHPmyadmin.
+                    </p>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Segundo Diseño</h3>
+                        <p>Pagina Web</p>
+                    </div>
+                    <p class="primerd"><span>Mi segundo diseño</span> una pagina sencilla con animaciones, era una
+                        plantilla para una empresa.</p>
+                </div>
+                <a href="https://bolivarj.github.io/apirick/" target="_blank" style="text-decoration: none; color: inherit;">
+                    <div class="proyecto">
+                        <img src="img/apirick.JPG" alt="">
+                        <div class="overlay rick">
+                            <h3>Click Para Ver</h3>
+                            <p>consumo de API</p>
+                        </div>
+                        <p class="primerd">
+                            <span>Mi tercer diseño</span> un consumo de RickApi, con buscador por nombre,
+                            genero o especie, diseño animado.
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!--Seccion Contacto-->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>Contacto</h2>
+            <div class="fila">
+                <!--Formulario-->
+                <div class="col">
+                    <form id="formulario" action="https://formspree.io/f/xqkroaep" method="POST">
+                        <input type="text" name="text" placeholder="Empresa">
+                        <input type="email" name="email" placeholder="Dirección de correo">
+                        <textarea name="message" cols="30" rows="10" placeholder="¡Me necesitas en tu equipo!"
+                            style="resize: none;"></textarea>
+                        <button type="submit">
+                            Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+                            <span class="overlay"></span>
+                        </button>
+                        <div id="mensaje-confirmacion" style="display: none;">Correo enviado, ¡Gracias por contactarme!
+                        </div>
+                    </form>
+                </div>
+                <!--Mapa-->
+                <div class="col">
+                    <img src="img/Ubicacion.JPG" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-mobile-retro"></i>
+                                +57 322 5787390
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                jhormanbolivar1@gmail.com
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-building"></i>
+                                Cra 81A Floresta Calazans
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Colombia - Medellín
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.linkedin.com/in/jhorman-bolívar-cañaveral-1578a4277/"><i
+                    class="fa-brands fa-linkedin"></i></a>
+        </div>
+    </footer>
+
+    <!-- Sección de audio -->
+    <!-- <section id="audio">
+        <audio id="background-music" loop>
+            <source src="music/musiquita.mp3" type="audio/mpeg">
+            Tu navegador no soporta el elemento de audio.
+        </audio>
+        <div class="audio-controls">
+            <button onclick="playMusic()">Reproducir</button>
+            <button onclick="pauseMusic()">Pausar</button>
+        </div>
+    </section> -->
+
+    <script src="script.js"></script>
+</body>
+
+</html>
