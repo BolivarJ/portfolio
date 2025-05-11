@@ -22,7 +22,7 @@ function efectoHabilidades() {
     let distancia_skills = window.innerHeight - document.getElementById("skills").getBoundingClientRect().top;
 
     if (distancia_skills >= 300) {
-        const clasesHabilidades = ["javascript", "htmlycss", "git", "playwright", "drupal", "comunicacion", "equipo", "creati", "respo", "tecnica"];
+        const clasesHabilidades = ["javascript", "htmlycss", "git", "python", "playwright", "drupal", "comunicacion", "equipo", "creati", "respo", "tecnica"];
         habilidades.forEach((habilidad, index) => {
             habilidad.classList.add(clasesHabilidades[index]);
         });

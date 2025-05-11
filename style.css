@@ -339,13 +339,22 @@ margin-bottom: 10px;
     100%{width:80%;}
 }
 
+.skills .skill .python{
+    width: 0%;
+    animation: 2s python forwards;
+}
+@keyframes python{
+    0%{width: 0%;}
+    100%{width:80%;}
+}
+
 .skills .skill .playwright{
     width: 0%;
     animation: 2s playwright forwards;
 }
 @keyframes playwright{
     0%{width: 0%;}
-    100%{width: 50%;}
+    100%{width: 80%;}
 }
 
 .skills .skill .drupal{
@@ -354,7 +363,7 @@ margin-bottom: 10px;
 }
 @keyframes drupal{
     0%{width: 0%;}
-    100%{width: 50%;}
+    100%{width: 80%;}
 }
 
 .skills .skill .comunicacion{
@@ -372,7 +381,7 @@ margin-bottom: 10px;
 }
 @keyframes equipo{
     0%{width: 0%;}
-    100%{width: 90%;}
+    100%{width: 100%;}
 }
 
 .skills .skill .creati{
@@ -399,7 +408,7 @@ margin-bottom: 10px;
 }
 @keyframes tecnica{
     0%{width: 0%;}
-    100%{width: 90%;}
+    100%{width: 100%;}
 }
 
 /* Seccion Curriculum */
